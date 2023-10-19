@@ -1,0 +1,11 @@
+{
+  "data":
+  [
+    {
+      "id": 1,
+      "name": "Donald Tusk",
+      "mood": ["serious", "superhero"],
+      "image": "https://pbs.twimg.com/media/F8vem9mW8AABFc4?format=jpg&name=medium"
+    }
+  ]
+}
