@@ -1,0 +1,83 @@
+@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
+body {
+    background: black;
+    color: white;
+    font-family: 'Gilroy';
+}
+
+h1#title {
+    font-size: 16rem;
+    animation: text-shake 0.6s infinite;
+    scale: 0.5;
+    filter: blur(1px);
+    line-height: 65%;
+    margin: 0px;
+    text-shadow: 0px 0px 50px #ffffff66;
+}
+
+div#hero {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+p#subtitle {
+    animation: text-shake 0.6s infinite;
+    filter: blur(0.5px);
+    line-height: 50%;
+    margin: 0px;
+    font-size: 1.6rem;
+    text-shadow: 0px 0px 20px #ffffff8a;
+}
+body {
+    background: black;
+    color: white;
+    font-family: 'Gilroy', 'Gilroy-Bold';
+}
+.noise {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  width: 200%;
+  height: 200vh;
+  scale: 2;
+  background: #020202 url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
+  background-repeat: repeat;
+  animation: noise-animation .2s infinite;
+  opacity: 1;
+  filter: brightness(12);
+  mix-blend-mode: unset;
+  opacity: 0.15;
+}
+
+@keyframes noise-animation {
+    0% { transform: translate(0,0) }
+    10% { transform: translate(-5%,-5%) }
+    20% { transform: translate(-10%,5%) }
+    30% { transform: translate(5%,-10%) }
+    40% { transform: translate(-5%,15%) }
+    50% { transform: translate(-10%,5%) }
+    60% { transform: translate(15%,0) }
+    70% { transform: translate(0,10%) }
+    80% { transform: translate(-15%,0) }
+    90% { transform: translate(10%,5%) }
+    100% { transform: translate(5%,0) }
+}
+
+@keyframes text-shake {
+   0% { transform: translate(0,0) }
+    10% { transform: translate(-1%,-1%) }
+    20% { transform: translate(-2%,1%) }
+    30% { transform: translate(1%,-2%) }
+    40% { transform: translate(-1%,3%) }
+    50% { transform: translate(-2%,1%) }
+    60% { transform: translate(3%,0) }
+    70% { transform: translate(0,2%) }
+    80% { transform: translate(-3%,0) }
+    90% { transform: translate(2%,1%) }
+    100% { transform: translate(1%,0) }
+}
