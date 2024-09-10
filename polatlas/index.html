@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PolAtlas - Statystyki</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Wybierz kategorię danych</h1>
+        <select id="categorySelect">
+            <option value="">-- Wybierz kategorię --</option>
+            <option value="demografia">1. Analiza Demograficzna</option>
+            <option value="ekonomia">2. Badania Ekonomiczne</option>
+            <option value="urbanistyka">3. Planowanie Urbanistyczne</option>
+            <option value="edukacja">4. Badania nad Edukacją</option>
+            <option value="socjologia">5. Badania Socjologiczne</option>
+            <option value="srodowisko">6. Środowisko i Zrównoważony Rozwój</option>
+            <option value="biznes">7. Rozwój Biznesu</option>
+        </select>
+        <div id="dataDisplay"></div>
+        <canvas id="dataChart"></canvas>
+    </div>
+</body>
+</html>
